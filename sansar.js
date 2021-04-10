@@ -10,7 +10,7 @@ const app = express();
 }
 const http = require('http');
 app.get("/", (request, response) => {
-  console.log(Date.now() + "Sansar öpüldü);
+  console.log(Date.now() + "Sansar öpüldü");
   response.sendStatus(200);
 });
 app.listen(process.env.PORT);
