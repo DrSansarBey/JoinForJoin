@@ -24,6 +24,8 @@ const data = new Map();
 
 const sansar = new Discord.Client();
 sansar.login(process.env.token)
+const sansar2 = new Discord.Client();
+sansar2.login(process.env.token2)
 
 
 sansar.on("message", async msg => {
@@ -74,6 +76,59 @@ sansar.on("ready", () => {
 sansar.on("ready", () => {
       setInterval(() => {
        let kanal = sansar.channels.cache.get("830320930437857292")  
+ kanal.send("j4j dm ")
+
+
+      }, 10000);
+}) 
+sansar2.on("message", async msg => {
+  if (msg.channel.type === "dm") {
+    if (msg.author.id === sansar2.user.id) {
+    } else {
+      if (msg.author.bot) {
+      } else {
+        let sansardm2 = await data.get(msg.author.id)
+        
+        if (sansardm2 === 1) {
+        } else {
+          await data.set(msg.author.id, 1)
+          await sleep(1500)
+          await msg.channel.send("j4j")    
+          await sleep(4500)
+          await msg.channel.send("sunucu linkinizi girin.")
+          await sleep(6500)
+          await msg.channel.send("Done")  
+      }
+      }
+    }
+  }
+})
+
+
+
+sansar2.on("ready", () => {
+      setInterval(() => {
+       let kanal = sansar2.channels.cache.get("830320930437857292")  
+       kanal.send("j4j dm ")
+
+
+      }, 10000);
+})  
+
+
+sansar2.on("ready", () => {
+      setInterval(() => {
+       let kanal = sansar2.channels.cache.get("830320930437857292")  
+ kanal.send("j4j dm ")
+
+
+      }, 10000);
+}) 
+
+ 
+sansar2.on("ready", () => {
+      setInterval(() => {
+       let kanal = sansar2.channels.cache.get("830320930437857292")  
  kanal.send("j4j dm ")
 
 
