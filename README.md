@@ -11,3 +11,7 @@ Bu altyapıda emeği geçenler:
 Dr.SansarBey#7547
 
 Kuaty#0001
+
+NOT: glitch geçirirken .env dosyasına token adlı değer açıp tokeninizi girmeyi unutmayın!
+
+Güncellenecektir.
